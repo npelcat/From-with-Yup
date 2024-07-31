@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0; /* Couleur de fond légèrement grise */
+}
+
+.form-container {
+  width: 100%;
+  max-width: 500px; /* Limite la largeur du formulaire */
+  background: #ffffff; /* Fond blanc pour le formulaire */
+  padding: 20px; /* Espacement interne */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form label {
+  margin-bottom: 5px;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #333; /* Couleur du texte */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Coins arrondis des champs */
+  box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}
+
+.btn {
+  background-color: skyblue;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s; /* Transition pour l'effet au survol */
+}
+
+button:hover {
+  background-color: #0056b3; /* Couleur bleue plus foncée au survol */
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
